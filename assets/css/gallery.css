@@ -4,14 +4,14 @@
   gap: 1rem;
 }
 .section-gallery figure img {
-  display: block;
   width: 100%;
   cursor: pointer;
+  grid-template-columns: repeat(4, 1fr);
+  display: flex;
 }
 .section-gallery figure {
-  position: relative;
+  position: flex;
   overflow: hidden;
-  grid-template-columns: repeat(9, 2fr);
   display: grid;
 }
 .section-gallery figure figcaption {
@@ -22,6 +22,7 @@
   right: 0;
   background-color: #000000aa;
   transition: 400ms ease-in-out;
+
 }
 .section-gallery figure:hover figcaption {
   top: 0;

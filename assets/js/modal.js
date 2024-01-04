@@ -1,5 +1,6 @@
 
  displayModal("Cookie_container");
+ 
 
  function displayModal(id) {
      document.getElementById(id).style.display = "block";
@@ -45,4 +46,8 @@ function closeModal(elementiD) {
 
     myBody.style.overflow = "scroll";
 
+}
+function closeModal(id) {
+    document.getElementById(id).style.display = "none";
+    document.getElementById("myBody").classList.toggle("noScroll");
 }
