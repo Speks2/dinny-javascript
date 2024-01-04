@@ -11,6 +11,8 @@
 .section-gallery figure {
   position: relative;
   overflow: hidden;
+  grid-template-columns: repeat(9, 2fr);
+  display: grid;
 }
 .section-gallery figure figcaption {
   position: absolute;
